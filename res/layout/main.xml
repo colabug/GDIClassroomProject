@@ -3,11 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!--Display-->
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
     <!--1 key-->
     <Button
         android:id="@+id/button_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/result"
         android:text="@string/key1"/>
 
     <!--2 key-->
@@ -15,6 +22,7 @@
         android:id="@+id/button_2"
         android:layout_toRightOf="@id/button_1"
         android:layout_width="wrap_content"
+        android:layout_alignBaseline="@id/button_1"
         android:layout_height="wrap_content"
         android:text="@string/key2"/>
 
@@ -22,50 +30,9 @@
     <Button
         android:id="@+id/button_3"
         android:layout_toRightOf="@id/button_2"
+        android:layout_alignBaseline="@id/button_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/key3"/>
-
-    <!--4 key-->
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/key4"/>
-
-    <!--5 key-->
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/key5"/>
-
-    <!--6 key-->
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/key6"/>
-
-    <!--7 key-->
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/key7"/>
-
-    <!--8 key-->
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/key8"/>
-
-    <!--9 key-->
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/key9"/>
-
-    <!--0 key-->
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/key0"/>
 </RelativeLayout>
 
