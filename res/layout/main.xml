@@ -1,38 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match">
 
-    <!--Display-->
     <TextView
-        android:id="@+id/result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:id="@+id/display"
+        style="@style/Result"/>
 
-    <!--1 key-->
+    <!--1-->
     <Button
-        android:id="@+id/button_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/result"
-        android:text="@string/key1"/>
+        android:id="@+id/key1"
+        android:layout_below="@id/display"
+        android:text="@string/key1"
+        style="@style/Number"/>
 
-    <!--2 key-->
+    <!--2-->
     <Button
-        android:id="@+id/button_2"
-        android:layout_toRightOf="@id/button_1"
-        android:layout_width="wrap_content"
-        android:layout_alignBaseline="@id/button_1"
-        android:layout_height="wrap_content"
-        android:text="@string/key2"/>
+        android:id="@+id/key2"
+        android:layout_toRightOf="@id/key1"
+        android:layout_alignBaseline="@id/key1"
+        android:text="@string/key2"
+        style="@style/Number"/>
 
-    <!--3 key-->
+    <!--3-->
     <Button
-        android:id="@+id/button_3"
-        android:layout_toRightOf="@id/button_2"
-        android:layout_alignBaseline="@id/button_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/key3"/>
+        android:id="@+id/key3"
+        android:layout_toRightOf="@id/key2"
+        android:layout_alignBaseline="@id/key2"
+        android:text="@string/key3"
+        style="@style/Number"/>
+
+    <!--4-->
+    <Button
+        android:id="@+id/key4"
+        android:layout_below="@id/key1"
+        android:text="@string/key4"
+        style="@style/Number"/>
+
+    <!--5-->
+    <Button
+        android:id="@+id/key5"
+        android:layout_toRightOf="@id/key4"
+        android:layout_alignBaseline="@id/key4"
+        android:text="@string/key5"
+        style="@style/Number"/>
+
+    <!--6-->
+    <Button
+        android:id="@+id/key6"
+        android:layout_toRightOf="@id/key5"
+        android:layout_alignBaseline="@id/key5"
+        android:text="@string/key6"
+        style="@style/Number"/>
+
+    <!--7-->
+    <Button
+        android:id="@+id/key7"
+        android:layout_below="@id/key4"
+        android:text="@string/key7"
+        style="@style/Number"/>
+
+    <!--8-->
+    <Button
+        android:id="@+id/key8"
+        android:layout_toRightOf="@id/key7"
+        android:layout_alignBaseline="@id/key7"
+        android:text="@string/key8"
+        style="@style/Number"/>
+
+    <!--9-->
+    <Button
+        android:id="@+id/key9"
+        android:layout_toRightOf="@id/key8"
+        android:layout_alignBaseline="@id/key8"
+        android:text="@string/key9"
+        style="@style/Number"/>
+
+    <!--0-->
+    <Button
+        android:id="@+id/key0"
+        android:text="@string/key0"
+        android:layout_below="@id/key7"
+        style="@style/ZeroKey"/>
+
+    <!--Plus-->
+    <Button
+        android:id="@+id/plus"
+        android:layout_toRightOf="@id/key3"
+        android:layout_alignBaseline="@id/key3"
+        android:text="@string/plus"
+        style="@style/Operator"/>
+
+    <!--Minus-->
+    <Button
+        android:id="@+id/minus"
+        android:layout_toRightOf="@id/key6"
+        android:layout_alignBaseline="@id/key6"
+        android:text="@string/minus"
+        style="@style/Operator"/>
+
+    <!--Multiply-->
+    <Button
+        android:id="@+id/multiply"
+        android:layout_toRightOf="@id/key9"
+        android:layout_alignBaseline="@id/key9"
+        android:text="@string/multiply"
+        style="@style/Operator"/>
+
+    <!--Modulo-->
+    <Button
+        android:id="@+id/modulo"
+        android:layout_toRightOf="@id/key0"
+        android:layout_alignBaseline="@id/key0"
+        android:text="@string/modulo"
+        style="@style/Operator"/>
+
+    <!--Divide-->
+    <Button
+        android:id="@+id/divide"
+        android:layout_toRightOf="@id/modulo"
+        android:layout_alignBaseline="@id/modulo"
+        android:text="@string/divide"
+        style="@style/Operator"/>
+
+    <!--Clear-->
+    <Button
+        android:id="@+id/clear"
+        android:text="@string/clear"
+        android:layout_below="@id/key0"
+        style="@style/Clear"/>
+
+    <!--Equal-->
+    <Button
+        android:id="@+id/equal"
+        android:layout_toRightOf="@id/clear"
+        android:layout_alignBaseline="@id/clear"
+        android:text="@string/equal"
+        style="@style/Equal"/>
 </RelativeLayout>
-

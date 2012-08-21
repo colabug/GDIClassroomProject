@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!--Wrap width & height-->
+    <style name="Wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--Match width & height-->
+    <style name="Match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!--Match width, wrap height-->
+    <style name="MatchWidth" parent="Wrap">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!--Number-->
+    <style name="Number" parent="Wrap">
+    </style>
+
+    <!--Zero-->
+    <style name="ZeroKey" parent="Wrap">
+    </style>
+
+    <!--Operator-->
+    <style name="Operator" parent="Wrap">
+    </style>
+
+    <!--Equal button-->
+    <style name="Equal" parent="Wrap">
+    </style>
+
+    <!--Clear button-->
+    <style name="Clear" parent="Wrap">
+    </style>
+
+    <!--Result Display-->
+    <style name="Result" parent="Wrap">
+    </style>
+</resources>
