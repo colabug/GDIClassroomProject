@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!--Number key-->
+    <color name="light_brown">#ffcfac76</color>
+    <color name="brown">#ff816946</color>
+    <color name="white">#ffffff</color>
+
+    <!--Equals-->
+</resources>

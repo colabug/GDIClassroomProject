@@ -20,10 +20,17 @@
 
     <!--Number-->
     <style name="Number" parent="Wrap">
+        <item name="android:layout_width">@dimen/number_button_dimension</item>
+        <item name="android:layout_height">@dimen/number_button_dimension</item>
+        <item name="android:background">@drawable/number_key_state</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/key_text_size</item>
+        <item name="android:layout_margin">@dimen/key_margin</item>
     </style>
 
     <!--Zero-->
-    <style name="ZeroKey" parent="Wrap">
+    <style name="ZeroKey" parent="Number">
+        <item name="android:layout_width">@dimen/zero_button_width</item>
     </style>
 
     <!--Operator-->
